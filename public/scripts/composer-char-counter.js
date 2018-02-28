@@ -7,7 +7,7 @@
 
 $(document).ready(function () {
   $('textarea').keyup( function(event)  {
-    console.log(this);
+
     var text_max = 140;
     var text_length = $(this).val().length;
     var text_remaining = $(".counter").html(text_max - text_length);

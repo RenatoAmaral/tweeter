@@ -1,12 +1,14 @@
 
-/*            TWEET POSTING       */
+/*            TWEET POST       */
 
-section.new-tweet , .tweets {
+
+.new-tweet  {
     background-color: #eee;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     margin-left: 2em;
     margin-right: 2em;
+    padding: .5em;
 }
 
 textarea {
@@ -15,12 +17,6 @@ textarea {
 
 }
 
-.new-tweet {
-  padding-left:  .5em;
-  padding-right: .5em;
-  padding-bottom: .5em;
-
- }
 
 .counter, button {
   float:right;
@@ -34,10 +30,21 @@ textarea {
 }
 
 
-/*            TWEET FEED        */
+/*            TWEET FEED POSTS       */
 
 
 
+.inner-tweet  {
+    background-color: #eee;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*            TWEET FEED POSTS  - TOP     */
 
 header {
   align-self: baseline;
@@ -45,29 +52,6 @@ header {
   flex-flow: row wrap;
   height: 4em;
   justify-content: space-between;
-}
-
-footer {
-  border-top:  1px solid #e0e0e0;
-  background-color: white;
-  display: flex;
-  flex-flow: row wrap;
-  height: 100%;
-  justify-content: space-between;
-}
-
-
-article {
-  background-color: white;
-  display: flex;
-  flex-flow: row wrap;
-  height: 5em;
-  justify-content: space-between;
-}
-
-article p {
-  width: 100%;
-  padding: 10px;
 }
 
 .top-left {
@@ -97,17 +81,51 @@ article p {
   width: 50px;
 }
 
-.botton-left {
+
+/*            TWEET FEED POSTS  - TEXT    */
+
+
+article {
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  height: 5em;
+  justify-content: space-between;
+}
+
+article p {
+  width: 100%;
+  padding: 10px;
+}
+
+
+/*            TWEET FEED POSTS  - BOTTON    */
+
+
+footer {
+  border-top:  1px solid #e0e0e0;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: space-between;
+  border-radius: 0px 0px  8px 8px;
+}
+
+.lower-left {
   font-size: .7em;
   margin: 0;
   padding-left: 10px;
 }
 
-.botton-right {
+.lower-right {
   align-self: center;
   justify-content: flex-end;
   padding-right: 10px;
 }
+
+
+
 
 
 
