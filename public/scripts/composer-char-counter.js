@@ -10,19 +10,21 @@ $(document).ready(function () {
     console.log(this);
     var text_max = 140;
     var text_length = $(this).val().length;
-    var text_remaining = text_max - text_length;
+    var text_remaining = $(".counter").html(text_max - text_length);
 
-    if (text_remaining < 0){
+    if (text_max - text_length < 0){ // When text counter gets under 0 turns text color changes to red
 
-      $(".counter").html(text_remaining).css("color", "red");
+      text_remaining.css("color", "red");
 
     }else {
 
-      $(".counter").html(text_remaining).css("color", "black");;
+      text_remaining.css("color", "black");;
 
     }
   });
 });
+
+
 
 
 

@@ -1,4 +1,7 @@
-section.new-tweet {
+
+/*            TWEET POSTING       */
+
+section.new-tweet , .tweets {
     background-color: #eee;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
@@ -19,7 +22,7 @@ textarea {
 
  }
 
-.counter {
+.counter, button {
   float:right;
   padding-top: 5px;
 
@@ -29,3 +32,82 @@ textarea {
     border-bottom: 2px solid;
     margin-top: 10px;
 }
+
+
+/*            TWEET FEED        */
+
+
+
+
+header {
+  align-self: baseline;
+  display: flex;
+  flex-flow: row wrap;
+  height: 4em;
+  justify-content: space-between;
+}
+
+footer {
+  border-top:  1px solid #e0e0e0;
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: space-between;
+}
+
+
+article {
+  background-color: white;
+  display: flex;
+  flex-flow: row wrap;
+  height: 5em;
+  justify-content: space-between;
+}
+
+article p {
+  width: 100%;
+  padding: 10px;
+}
+
+.top-left {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-left h2{
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.top-right{
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.top-right h4{
+  color: #D3D3D3;
+}
+
+.top-left img {
+  height: 50px;
+  margin-top: 10px;
+  width: 50px;
+}
+
+.botton-left {
+  font-size: .7em;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.botton-right {
+  align-self: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+
+

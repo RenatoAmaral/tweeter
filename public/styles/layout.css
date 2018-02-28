@@ -18,16 +18,22 @@ body {
   background-color: #eee;
   color: #244751;
   font-family: 'Roboto Condensed', sans-serif;
-  margin: 0;
 }
 
 main.container {
     background-color: white;
-    height: 450px;
+    height: auto;
     width: 450px;
     margin: auto;
     padding-top: 140px;
+    padding-bottom: 100px;
 }
+
+.tweets {
+  margin-top: 15px;
+  margin-bottom: 15px
+
+ }
 
 
 /*
