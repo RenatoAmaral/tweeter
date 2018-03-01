@@ -25,3 +25,18 @@
   padding-left: 10px;
 
 }
+
+#nav-bar > button {
+    background-color: #e8fff8;
+    height: 80%;
+    width: 140px;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 1.3em;
+    margin: 6px;
+}
+
+#nav-bar > button:hover {
+    background-color: white;
+
+}

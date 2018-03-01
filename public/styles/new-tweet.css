@@ -6,6 +6,7 @@
     background-color: #eee;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
+    display:none;
     margin-left: 2em;
     margin-right: 2em;
     padding: .5em;
@@ -17,6 +18,10 @@ textarea {
 
 }
 
+textarea:hover , textarea:focus {
+    border-color: blue;
+    box-shadow: 0px 0px 15px 0px rgba(45,130,204,1);
+}
 
 .counter, button {
   float:right;
