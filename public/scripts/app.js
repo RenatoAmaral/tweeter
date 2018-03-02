@@ -19,6 +19,7 @@ $(function(){ // jQuery document.ready shortcut
     });
   }
 
+   // Creates the Html block dynamically
   function createTweetElement(tweet) {
 
     let $tweet = $(`
@@ -50,7 +51,7 @@ $(function(){ // jQuery document.ready shortcut
 
                   <dir class="lower-left">
 
-                      <p> 10 days ago</p>
+                       <p>${$.timeago((new Date(tweet.created_at)))}</p>
 
                   </dir>
 
@@ -112,11 +113,14 @@ $(function(){ // jQuery document.ready shortcut
   $('#btn-compose').click(function(){
         $(".new-tweet").slideToggle(1000);
         $('textarea').select();
-
     });
 
   $('body').load(loadTweets());
+
 });
+
+
+
 
 
 

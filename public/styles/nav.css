@@ -1,42 +1,42 @@
 @import url('./new-tweet.css');
 
 #nav-bar {
-    width : 100%;
-    height: 80px;
-    background-color : #00a087;
-    color : #e8fdff;
-    padding-left : 2em;
-    padding-right : 2em;
-    position: fixed;
-    top: 0;
+  background-color : #00a087;
+  color : #e8fdff;
+  height: 80px;
+  padding-left : 2em;
+  padding-right : 2em;
+  position: fixed;
+  top: 0;
+  width : 100%;
 }
 
 #nav-bar .logo {
-    width: 80px;
-    height: 80px;
-    float: left;
+  float: left;
+  height: 80px;
+  width: 80px;
 }
 
 #nav-bar .header {
+  float: left;
   font-size: 2em;
   line-height: 2;
-  float: left;
   height: 100%;
   padding-left: 10px;
 
 }
 
 #nav-bar > button {
-    background-color: #e8fff8;
-    height: 80%;
-    width: 140px;
-    border: 2px solid;
-    border-radius: 8px;
-    font-size: 1.3em;
-    margin: 6px;
+  background-color: #e8fff8;
+  border: 2px solid;
+  border-radius: 8px;
+  font-size: 1.3em;
+  height: 80%;
+  margin: 6px;
+  width: 140px;
 }
 
 #nav-bar > button:hover {
-    background-color: white;
+  background-color: white;
 
 }
