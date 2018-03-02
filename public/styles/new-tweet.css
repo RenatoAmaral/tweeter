@@ -49,6 +49,11 @@ textarea:hover , textarea:focus {
     margin-bottom: 1em;
 }
 
+.inner-tweet:hover .lower-right{
+  display: block;
+
+}
+
 /*            TWEET FEED POSTS  - TOP     */
 
 header {
@@ -94,7 +99,7 @@ article {
   background-color: white;
   display: flex;
   flex-flow: row wrap;
-  height: 5em;
+  height: auto;
   justify-content: space-between;
 }
 
@@ -102,6 +107,7 @@ article p {
   width: 100%;
   padding: 10px;
 }
+
 
 
 /*            TWEET FEED POSTS  - BOTTON    */
@@ -127,8 +133,8 @@ footer {
   align-self: center;
   justify-content: flex-end;
   padding-right: 10px;
+  display: none;
 }
-
 
 
 

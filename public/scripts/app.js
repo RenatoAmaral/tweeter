@@ -6,7 +6,6 @@
 
 $(function(){ // jQuery document.ready shortcut
 
-
   function renderTweets(tweets) {
 
     // loops through tweets
@@ -84,6 +83,7 @@ $(function(){ // jQuery document.ready shortcut
 
   // Event handlers
 
+
   $('#compose').on('submit', function(ev) {
     ev.preventDefault()
     let tweet = $('#compose').serialize();
@@ -95,14 +95,16 @@ $(function(){ // jQuery document.ready shortcut
 
     } else if (text_remaining > 140 ) {
 
-          $(".counter").createTextNode("Exeeced Limit");
+          $(".counter").html("Exeeced Limit");
 
     } else {
         $.ajax({
           url: '/tweets',
           method: 'POST',
           data : tweet,
-          success: function(newTweet){loadTweets()}
+          success: function(newTweet){loadTweets(),
+                $(".counter").html(140)
+          }
         });
       }
   });
@@ -113,13 +115,14 @@ $(function(){ // jQuery document.ready shortcut
 
     });
 
-
-
-
-
-
-
+  $('body').load(loadTweets());
 });
+
+
+
+
+
+
 
 
 

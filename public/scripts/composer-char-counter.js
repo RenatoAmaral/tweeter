@@ -10,7 +10,7 @@ $(document).ready(function () {
 
     var text_max = 140;
     var text_length = $(this).val().length;
-    var text_remaining = $(".counter").createTextNode(text_max - text_length);
+    var text_remaining = $(".counter").html(text_max - text_length);
 
     if (text_max - text_length < 0){ // When text counter gets under 0 turns text color changes to red
 
