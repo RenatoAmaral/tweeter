@@ -111,7 +111,7 @@ $(function(){ // jQuery document.ready shortcut
   });
 
   $('#btn-compose').click(function(){
-        $(".new-tweet").slideToggle(1000);
+        $(".new-tweet").slideToggle(1300);
         $('textarea').select();
     });
 
