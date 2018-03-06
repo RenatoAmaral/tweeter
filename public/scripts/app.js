@@ -49,7 +49,7 @@ $(function(){ // jQuery document.ready shortcut
 
               <footer>
 
-                  <dir class="lower-left">
+                  <div class="lower-left">
 
                        <p>${$.timeago((new Date(tweet.created_at)))}</p>
 
